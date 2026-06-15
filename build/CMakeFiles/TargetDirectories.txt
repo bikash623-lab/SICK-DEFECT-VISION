@@ -1,0 +1,5 @@
+/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles/edit_cache.dir
+/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles/rebuild_cache.dir
+/Users/bikash_malla/Desktop/SICK-defect-vision/build/practice/CMakeFiles/threads_practice.dir
+/Users/bikash_malla/Desktop/SICK-defect-vision/build/practice/CMakeFiles/edit_cache.dir
+/Users/bikash_malla/Desktop/SICK-defect-vision/build/practice/CMakeFiles/rebuild_cache.dir

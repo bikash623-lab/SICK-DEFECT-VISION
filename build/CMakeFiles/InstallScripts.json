@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/bikash_malla/Desktop/SICK-defect-vision/build/cmake_install.cmake",
+		"/Users/bikash_malla/Desktop/SICK-defect-vision/build/practice/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
