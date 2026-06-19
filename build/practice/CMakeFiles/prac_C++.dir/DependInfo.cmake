@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/bikash_malla/Desktop/SICK-defect-vision/practice/queue_practice.cpp" "practice/CMakeFiles/queue_practice.dir/queue_practice.cpp.o" "gcc" "practice/CMakeFiles/queue_practice.dir/queue_practice.cpp.o.d"
+  "/Users/bikash_malla/Desktop/SICK-defect-vision/practice/prac_C++.cpp" "practice/CMakeFiles/prac_C++.dir/prac_C++.cpp.o" "gcc" "practice/CMakeFiles/prac_C++.dir/prac_C++.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

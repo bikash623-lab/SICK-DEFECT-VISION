@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
+find_package(Threads REQUIRED)
 project(Practice)
 set(CMAKE_CXX_STANDARD 17)
 add_executable(threads_practice threads_practice.cpp)
-
+add_executable(prac_C++ prac_C++.cpp)
+target_link_libraries(prac_C++ Threads::Threads)

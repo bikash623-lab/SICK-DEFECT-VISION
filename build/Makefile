@@ -129,6 +129,19 @@ threads_practice/fast:
 	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/threads_practice.dir/build.make practice/CMakeFiles/threads_practice.dir/build
 .PHONY : threads_practice/fast
 
+#=============================================================================
+# Target rules for targets named prac_C++
+
+# Build rule for target.
+prac_C++: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prac_C++
+.PHONY : prac_C++
+
+# fast build rule for target.
+prac_C++/fast:
+	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/prac_C++.dir/build.make practice/CMakeFiles/prac_C++.dir/build
+.PHONY : prac_C++/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -137,6 +150,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... prac_C++"
 	@echo "... threads_practice"
 .PHONY : help
 
