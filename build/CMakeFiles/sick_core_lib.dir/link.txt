@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsick_core_lib.a CMakeFiles/sick_core_lib.dir/cpp_core/acquisition.cpp.o CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.o
+/usr/bin/ranlib libsick_core_lib.a

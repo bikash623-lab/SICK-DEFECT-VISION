@@ -117,30 +117,139 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named threads_practice
+# Target rules for targets named sick_core_lib
 
 # Build rule for target.
-threads_practice: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 threads_practice
-.PHONY : threads_practice
+sick_core_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sick_core_lib
+.PHONY : sick_core_lib
 
 # fast build rule for target.
-threads_practice/fast:
-	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/threads_practice.dir/build.make practice/CMakeFiles/threads_practice.dir/build
-.PHONY : threads_practice/fast
+sick_core_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/build
+.PHONY : sick_core_lib/fast
 
 #=============================================================================
-# Target rules for targets named prac_C++
+# Target rules for targets named test_acquisition
 
 # Build rule for target.
-prac_C++: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prac_C++
-.PHONY : prac_C++
+test_acquisition: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_acquisition
+.PHONY : test_acquisition
 
 # fast build rule for target.
-prac_C++/fast:
-	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/prac_C++.dir/build.make practice/CMakeFiles/prac_C++.dir/build
-.PHONY : prac_C++/fast
+test_acquisition/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acquisition.dir/build.make CMakeFiles/test_acquisition.dir/build
+.PHONY : test_acquisition/fast
+
+#=============================================================================
+# Target rules for targets named test_preprocessor
+
+# Build rule for target.
+test_preprocessor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_preprocessor
+.PHONY : test_preprocessor
+
+# fast build rule for target.
+test_preprocessor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_preprocessor.dir/build.make CMakeFiles/test_preprocessor.dir/build
+.PHONY : test_preprocessor/fast
+
+cpp_core/acquisition.o: cpp_core/acquisition.cpp.o
+.PHONY : cpp_core/acquisition.o
+
+# target to build an object file
+cpp_core/acquisition.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/acquisition.cpp.o
+.PHONY : cpp_core/acquisition.cpp.o
+
+cpp_core/acquisition.i: cpp_core/acquisition.cpp.i
+.PHONY : cpp_core/acquisition.i
+
+# target to preprocess a source file
+cpp_core/acquisition.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/acquisition.cpp.i
+.PHONY : cpp_core/acquisition.cpp.i
+
+cpp_core/acquisition.s: cpp_core/acquisition.cpp.s
+.PHONY : cpp_core/acquisition.s
+
+# target to generate assembly for a file
+cpp_core/acquisition.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/acquisition.cpp.s
+.PHONY : cpp_core/acquisition.cpp.s
+
+cpp_core/preprocessor.o: cpp_core/preprocessor.cpp.o
+.PHONY : cpp_core/preprocessor.o
+
+# target to build an object file
+cpp_core/preprocessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.o
+.PHONY : cpp_core/preprocessor.cpp.o
+
+cpp_core/preprocessor.i: cpp_core/preprocessor.cpp.i
+.PHONY : cpp_core/preprocessor.i
+
+# target to preprocess a source file
+cpp_core/preprocessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.i
+.PHONY : cpp_core/preprocessor.cpp.i
+
+cpp_core/preprocessor.s: cpp_core/preprocessor.cpp.s
+.PHONY : cpp_core/preprocessor.s
+
+# target to generate assembly for a file
+cpp_core/preprocessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.s
+.PHONY : cpp_core/preprocessor.cpp.s
+
+cpp_core/test_acq_main.o: cpp_core/test_acq_main.cpp.o
+.PHONY : cpp_core/test_acq_main.o
+
+# target to build an object file
+cpp_core/test_acq_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acquisition.dir/build.make CMakeFiles/test_acquisition.dir/cpp_core/test_acq_main.cpp.o
+.PHONY : cpp_core/test_acq_main.cpp.o
+
+cpp_core/test_acq_main.i: cpp_core/test_acq_main.cpp.i
+.PHONY : cpp_core/test_acq_main.i
+
+# target to preprocess a source file
+cpp_core/test_acq_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acquisition.dir/build.make CMakeFiles/test_acquisition.dir/cpp_core/test_acq_main.cpp.i
+.PHONY : cpp_core/test_acq_main.cpp.i
+
+cpp_core/test_acq_main.s: cpp_core/test_acq_main.cpp.s
+.PHONY : cpp_core/test_acq_main.s
+
+# target to generate assembly for a file
+cpp_core/test_acq_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acquisition.dir/build.make CMakeFiles/test_acquisition.dir/cpp_core/test_acq_main.cpp.s
+.PHONY : cpp_core/test_acq_main.cpp.s
+
+cpp_core/test_prep_main.o: cpp_core/test_prep_main.cpp.o
+.PHONY : cpp_core/test_prep_main.o
+
+# target to build an object file
+cpp_core/test_prep_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_preprocessor.dir/build.make CMakeFiles/test_preprocessor.dir/cpp_core/test_prep_main.cpp.o
+.PHONY : cpp_core/test_prep_main.cpp.o
+
+cpp_core/test_prep_main.i: cpp_core/test_prep_main.cpp.i
+.PHONY : cpp_core/test_prep_main.i
+
+# target to preprocess a source file
+cpp_core/test_prep_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_preprocessor.dir/build.make CMakeFiles/test_preprocessor.dir/cpp_core/test_prep_main.cpp.i
+.PHONY : cpp_core/test_prep_main.cpp.i
+
+cpp_core/test_prep_main.s: cpp_core/test_prep_main.cpp.s
+.PHONY : cpp_core/test_prep_main.s
+
+# target to generate assembly for a file
+cpp_core/test_prep_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_preprocessor.dir/build.make CMakeFiles/test_preprocessor.dir/cpp_core/test_prep_main.cpp.s
+.PHONY : cpp_core/test_prep_main.cpp.s
 
 # Help Target
 help:
@@ -150,8 +259,21 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... prac_C++"
-	@echo "... threads_practice"
+	@echo "... sick_core_lib"
+	@echo "... test_acquisition"
+	@echo "... test_preprocessor"
+	@echo "... cpp_core/acquisition.o"
+	@echo "... cpp_core/acquisition.i"
+	@echo "... cpp_core/acquisition.s"
+	@echo "... cpp_core/preprocessor.o"
+	@echo "... cpp_core/preprocessor.i"
+	@echo "... cpp_core/preprocessor.s"
+	@echo "... cpp_core/test_acq_main.o"
+	@echo "... cpp_core/test_acq_main.i"
+	@echo "... cpp_core/test_acq_main.s"
+	@echo "... cpp_core/test_prep_main.o"
+	@echo "... cpp_core/test_prep_main.i"
+	@echo "... cpp_core/test_prep_main.s"
 .PHONY : help
 
 

@@ -63,10 +63,16 @@ CMAKE_BINARY_DIR = /Users/bikash_malla/Desktop/SICK-defect-vision/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/sick_core_lib.dir/all
+all: CMakeFiles/test_acquisition.dir/all
+all: CMakeFiles/test_preprocessor.dir/all
 all: practice/all
 .PHONY : all
 
 # The main recursive "codegen" target.
+codegen: CMakeFiles/sick_core_lib.dir/codegen
+codegen: CMakeFiles/test_acquisition.dir/codegen
+codegen: CMakeFiles/test_preprocessor.dir/codegen
 codegen: practice/codegen
 .PHONY : codegen
 
@@ -75,6 +81,9 @@ preinstall: practice/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/sick_core_lib.dir/clean
+clean: CMakeFiles/test_acquisition.dir/clean
+clean: CMakeFiles/test_preprocessor.dir/clean
 clean: practice/clean
 .PHONY : clean
 
@@ -82,13 +91,11 @@ clean: practice/clean
 # Directory level rules for directory practice
 
 # Recursive "all" directory target.
-practice/all: practice/CMakeFiles/threads_practice.dir/all
-practice/all: practice/CMakeFiles/prac_C++.dir/all
+practice/all:
 .PHONY : practice/all
 
 # Recursive "codegen" directory target.
-practice/codegen: practice/CMakeFiles/threads_practice.dir/codegen
-practice/codegen: practice/CMakeFiles/prac_C++.dir/codegen
+practice/codegen:
 .PHONY : practice/codegen
 
 # Recursive "preinstall" directory target.
@@ -96,73 +103,104 @@ practice/preinstall:
 .PHONY : practice/preinstall
 
 # Recursive "clean" directory target.
-practice/clean: practice/CMakeFiles/threads_practice.dir/clean
-practice/clean: practice/CMakeFiles/prac_C++.dir/clean
+practice/clean:
 .PHONY : practice/clean
 
 #=============================================================================
-# Target rules for target practice/CMakeFiles/threads_practice.dir
+# Target rules for target CMakeFiles/sick_core_lib.dir
 
 # All Build rule for target.
-practice/CMakeFiles/threads_practice.dir/all:
-	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/threads_practice.dir/build.make practice/CMakeFiles/threads_practice.dir/depend
-	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/threads_practice.dir/build.make practice/CMakeFiles/threads_practice.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=3,4 "Built target threads_practice"
-.PHONY : practice/CMakeFiles/threads_practice.dir/all
+CMakeFiles/sick_core_lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=1,2,3 "Built target sick_core_lib"
+.PHONY : CMakeFiles/sick_core_lib.dir/all
 
 # Build rule for subdir invocation for target.
-practice/CMakeFiles/threads_practice.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 practice/CMakeFiles/threads_practice.dir/all
+CMakeFiles/sick_core_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sick_core_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles 0
-.PHONY : practice/CMakeFiles/threads_practice.dir/rule
+.PHONY : CMakeFiles/sick_core_lib.dir/rule
 
 # Convenience name for target.
-threads_practice: practice/CMakeFiles/threads_practice.dir/rule
-.PHONY : threads_practice
+sick_core_lib: CMakeFiles/sick_core_lib.dir/rule
+.PHONY : sick_core_lib
 
 # codegen rule for target.
-practice/CMakeFiles/threads_practice.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/threads_practice.dir/build.make practice/CMakeFiles/threads_practice.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=3,4 "Finished codegen for target threads_practice"
-.PHONY : practice/CMakeFiles/threads_practice.dir/codegen
+CMakeFiles/sick_core_lib.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target sick_core_lib"
+.PHONY : CMakeFiles/sick_core_lib.dir/codegen
 
 # clean rule for target.
-practice/CMakeFiles/threads_practice.dir/clean:
-	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/threads_practice.dir/build.make practice/CMakeFiles/threads_practice.dir/clean
-.PHONY : practice/CMakeFiles/threads_practice.dir/clean
+CMakeFiles/sick_core_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/clean
+.PHONY : CMakeFiles/sick_core_lib.dir/clean
 
 #=============================================================================
-# Target rules for target practice/CMakeFiles/prac_C++.dir
+# Target rules for target CMakeFiles/test_acquisition.dir
 
 # All Build rule for target.
-practice/CMakeFiles/prac_C++.dir/all:
-	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/prac_C++.dir/build.make practice/CMakeFiles/prac_C++.dir/depend
-	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/prac_C++.dir/build.make practice/CMakeFiles/prac_C++.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=1,2 "Built target prac_C++"
-.PHONY : practice/CMakeFiles/prac_C++.dir/all
+CMakeFiles/test_acquisition.dir/all: CMakeFiles/sick_core_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acquisition.dir/build.make CMakeFiles/test_acquisition.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acquisition.dir/build.make CMakeFiles/test_acquisition.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=4,5 "Built target test_acquisition"
+.PHONY : CMakeFiles/test_acquisition.dir/all
 
 # Build rule for subdir invocation for target.
-practice/CMakeFiles/prac_C++.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 practice/CMakeFiles/prac_C++.dir/all
+CMakeFiles/test_acquisition.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_acquisition.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles 0
-.PHONY : practice/CMakeFiles/prac_C++.dir/rule
+.PHONY : CMakeFiles/test_acquisition.dir/rule
 
 # Convenience name for target.
-prac_C++: practice/CMakeFiles/prac_C++.dir/rule
-.PHONY : prac_C++
+test_acquisition: CMakeFiles/test_acquisition.dir/rule
+.PHONY : test_acquisition
 
 # codegen rule for target.
-practice/CMakeFiles/prac_C++.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/prac_C++.dir/build.make practice/CMakeFiles/prac_C++.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=1,2 "Finished codegen for target prac_C++"
-.PHONY : practice/CMakeFiles/prac_C++.dir/codegen
+CMakeFiles/test_acquisition.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acquisition.dir/build.make CMakeFiles/test_acquisition.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=4,5 "Finished codegen for target test_acquisition"
+.PHONY : CMakeFiles/test_acquisition.dir/codegen
 
 # clean rule for target.
-practice/CMakeFiles/prac_C++.dir/clean:
-	$(MAKE) $(MAKESILENT) -f practice/CMakeFiles/prac_C++.dir/build.make practice/CMakeFiles/prac_C++.dir/clean
-.PHONY : practice/CMakeFiles/prac_C++.dir/clean
+CMakeFiles/test_acquisition.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acquisition.dir/build.make CMakeFiles/test_acquisition.dir/clean
+.PHONY : CMakeFiles/test_acquisition.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_preprocessor.dir
+
+# All Build rule for target.
+CMakeFiles/test_preprocessor.dir/all: CMakeFiles/sick_core_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_preprocessor.dir/build.make CMakeFiles/test_preprocessor.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_preprocessor.dir/build.make CMakeFiles/test_preprocessor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=6,7 "Built target test_preprocessor"
+.PHONY : CMakeFiles/test_preprocessor.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_preprocessor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_preprocessor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_preprocessor.dir/rule
+
+# Convenience name for target.
+test_preprocessor: CMakeFiles/test_preprocessor.dir/rule
+.PHONY : test_preprocessor
+
+# codegen rule for target.
+CMakeFiles/test_preprocessor.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_preprocessor.dir/build.make CMakeFiles/test_preprocessor.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=6,7 "Finished codegen for target test_preprocessor"
+.PHONY : CMakeFiles/test_preprocessor.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_preprocessor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_preprocessor.dir/build.make CMakeFiles/test_preprocessor.dir/clean
+.PHONY : CMakeFiles/test_preprocessor.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

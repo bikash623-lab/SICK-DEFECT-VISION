@@ -116,82 +116,6 @@ depend:
 	cd /Users/bikash_malla/Desktop/SICK-defect-vision/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-practice/CMakeFiles/threads_practice.dir/rule:
-	cd /Users/bikash_malla/Desktop/SICK-defect-vision/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 practice/CMakeFiles/threads_practice.dir/rule
-.PHONY : practice/CMakeFiles/threads_practice.dir/rule
-
-# Convenience name for target.
-threads_practice: practice/CMakeFiles/threads_practice.dir/rule
-.PHONY : threads_practice
-
-# fast build rule for target.
-threads_practice/fast:
-	cd /Users/bikash_malla/Desktop/SICK-defect-vision/build && $(MAKE) $(MAKESILENT) -f practice/CMakeFiles/threads_practice.dir/build.make practice/CMakeFiles/threads_practice.dir/build
-.PHONY : threads_practice/fast
-
-# Convenience name for target.
-practice/CMakeFiles/prac_C++.dir/rule:
-	cd /Users/bikash_malla/Desktop/SICK-defect-vision/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 practice/CMakeFiles/prac_C++.dir/rule
-.PHONY : practice/CMakeFiles/prac_C++.dir/rule
-
-# Convenience name for target.
-prac_C++: practice/CMakeFiles/prac_C++.dir/rule
-.PHONY : prac_C++
-
-# fast build rule for target.
-prac_C++/fast:
-	cd /Users/bikash_malla/Desktop/SICK-defect-vision/build && $(MAKE) $(MAKESILENT) -f practice/CMakeFiles/prac_C++.dir/build.make practice/CMakeFiles/prac_C++.dir/build
-.PHONY : prac_C++/fast
-
-prac_C++.o: prac_C++.cpp.o
-.PHONY : prac_C++.o
-
-# target to build an object file
-prac_C++.cpp.o:
-	cd /Users/bikash_malla/Desktop/SICK-defect-vision/build && $(MAKE) $(MAKESILENT) -f practice/CMakeFiles/prac_C++.dir/build.make practice/CMakeFiles/prac_C++.dir/prac_C++.cpp.o
-.PHONY : prac_C++.cpp.o
-
-prac_C++.i: prac_C++.cpp.i
-.PHONY : prac_C++.i
-
-# target to preprocess a source file
-prac_C++.cpp.i:
-	cd /Users/bikash_malla/Desktop/SICK-defect-vision/build && $(MAKE) $(MAKESILENT) -f practice/CMakeFiles/prac_C++.dir/build.make practice/CMakeFiles/prac_C++.dir/prac_C++.cpp.i
-.PHONY : prac_C++.cpp.i
-
-prac_C++.s: prac_C++.cpp.s
-.PHONY : prac_C++.s
-
-# target to generate assembly for a file
-prac_C++.cpp.s:
-	cd /Users/bikash_malla/Desktop/SICK-defect-vision/build && $(MAKE) $(MAKESILENT) -f practice/CMakeFiles/prac_C++.dir/build.make practice/CMakeFiles/prac_C++.dir/prac_C++.cpp.s
-.PHONY : prac_C++.cpp.s
-
-threads_practice.o: threads_practice.cpp.o
-.PHONY : threads_practice.o
-
-# target to build an object file
-threads_practice.cpp.o:
-	cd /Users/bikash_malla/Desktop/SICK-defect-vision/build && $(MAKE) $(MAKESILENT) -f practice/CMakeFiles/threads_practice.dir/build.make practice/CMakeFiles/threads_practice.dir/threads_practice.cpp.o
-.PHONY : threads_practice.cpp.o
-
-threads_practice.i: threads_practice.cpp.i
-.PHONY : threads_practice.i
-
-# target to preprocess a source file
-threads_practice.cpp.i:
-	cd /Users/bikash_malla/Desktop/SICK-defect-vision/build && $(MAKE) $(MAKESILENT) -f practice/CMakeFiles/threads_practice.dir/build.make practice/CMakeFiles/threads_practice.dir/threads_practice.cpp.i
-.PHONY : threads_practice.cpp.i
-
-threads_practice.s: threads_practice.cpp.s
-.PHONY : threads_practice.s
-
-# target to generate assembly for a file
-threads_practice.cpp.s:
-	cd /Users/bikash_malla/Desktop/SICK-defect-vision/build && $(MAKE) $(MAKESILENT) -f practice/CMakeFiles/threads_practice.dir/build.make practice/CMakeFiles/threads_practice.dir/threads_practice.cpp.s
-.PHONY : threads_practice.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,14 +124,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... prac_C++"
-	@echo "... threads_practice"
-	@echo "... prac_C++.o"
-	@echo "... prac_C++.i"
-	@echo "... prac_C++.s"
-	@echo "... threads_practice.o"
-	@echo "... threads_practice.i"
-	@echo "... threads_practice.s"
 .PHONY : help
 
 
