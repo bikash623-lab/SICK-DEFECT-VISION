@@ -3,26 +3,32 @@
 #include <mutex>
 #include <condition_variable>
 
-template<typename T>
+template<typename T> // T means any type: cv::Mat, int, etc.
 class ThreadSafeQueue {
 public:
-    //add item to back of queue
-    //wakes up any sleeping consumer
-    void push(T item);
+    //Thread 1 calls push() to add a frame
+    void push(T item){
+        std::lock_guard<std::mutex> lock(mutex_); //lock
+        queue_.push(item); // add item
+        cv_.notify_one(); // wake up thread 2 if sleeping
+    } // Lock automatically released here
 
-    //remove and return item from front
-    //block (sleeps) until item is available
-    T waitAndPop();
-
-    //non-blocking pop - retirn false if empty
-    bool tryPop(T& item);
-
-    bool empty() const;
-
-    size_t size() const;
-
+    // Thread 2 calls waitAndPop() to get a frame
+    //Block (sleeps) untill an item is available
+    T waitAndPop(){
+        std::unique_lock<std::mutex> lock(mutex_);
+        //sleep until queue is not empty
+        cv_.wait(lock, [this] {return !queue_.empty();});
+        T item = queue_.front();
+        queue_.pop();
+        return item;
+    }
+    bool empty() const{
+        std::lock_guard<std::mutex> lock(mutex_);
+        return queue_.empty();
+    }
 private:
-    std::queue<T> queue_;
-    mutable std::mutex mutex_;
-    std::condition_variable cv_;
+    std::queue<T> queue_; //actuall storage
+    mutable std::mutex mutex_; // the lock
+    std::condition_variable cv_; // for sleeping/waking
 }

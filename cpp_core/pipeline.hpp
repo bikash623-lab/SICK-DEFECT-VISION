@@ -5,16 +5,14 @@
 
 class PreprocessingPipeline{
 public:
-    // add a preprocessing step to the action
+    // add a step to the chain
+    // unique_ptr means pipeline takes ownership of the step
     void addstep(std::unique_ptr<Preprocessor> step);
 
-    //run all setps in order on the input image
+    // run image through All steps in order
     cv::Mat run(const cv::Mat& input);
 
-    //numpy-compatible version for pybind11
-    //(convert cv::Mat to numpy array)
-    pybind11::array_t<uint8_t> runNumpy(pybind11::array_t<uint8_t> input);
-
-    private:
-        std::vector<std::unique_ptr<Preprocessor>> steps;
+private:
+    // vector of steps - each is a unique_ptr to a Preprocessor
+    std::vector<std::unique_ptr<Preprocessor>> steps_;
 };
