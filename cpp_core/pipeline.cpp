@@ -1,6 +1,6 @@
 #include "pipeline.hpp"
 
-void PreprocessingPipeline::addstep(std::unique_ptr>Preprocessor>step){
+void PreprocessingPipeline::addstep(std::unique_ptr<Preprocessor> step){
     //std::move transfer ownership from caller to steps_ vector
     steps_.push_back(std::move(step));
 

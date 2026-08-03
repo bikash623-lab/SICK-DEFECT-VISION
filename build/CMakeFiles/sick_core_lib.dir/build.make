@@ -100,19 +100,51 @@ CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/preprocessor.cpp -o CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.s
 
+CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o: CMakeFiles/sick_core_lib.dir/flags.make
+CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o: /Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/pipeline.cpp
+CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o: CMakeFiles/sick_core_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o -MF CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o.d -o CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o -c /Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/pipeline.cpp
+
+CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/pipeline.cpp > CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.i
+
+CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/pipeline.cpp -o CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.s
+
+CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o: CMakeFiles/sick_core_lib.dir/flags.make
+CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o: /Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/pipeline_runner.cpp
+CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o: CMakeFiles/sick_core_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o -MF CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o.d -o CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o -c /Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/pipeline_runner.cpp
+
+CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/pipeline_runner.cpp > CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.i
+
+CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/pipeline_runner.cpp -o CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.s
+
 # Object files for target sick_core_lib
 sick_core_lib_OBJECTS = \
 "CMakeFiles/sick_core_lib.dir/cpp_core/acquisition.cpp.o" \
-"CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.o"
+"CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.o" \
+"CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o" \
+"CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o"
 
 # External object files for target sick_core_lib
 sick_core_lib_EXTERNAL_OBJECTS =
 
 libsick_core_lib.a: CMakeFiles/sick_core_lib.dir/cpp_core/acquisition.cpp.o
 libsick_core_lib.a: CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.o
+libsick_core_lib.a: CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o
+libsick_core_lib.a: CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o
 libsick_core_lib.a: CMakeFiles/sick_core_lib.dir/build.make
 libsick_core_lib.a: CMakeFiles/sick_core_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libsick_core_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libsick_core_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/sick_core_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sick_core_lib.dir/link.txt --verbose=$(VERBOSE)
 

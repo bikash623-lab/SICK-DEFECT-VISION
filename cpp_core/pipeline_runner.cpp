@@ -1,26 +1,34 @@
 #include "pipeline_runner.hpp"
 #include <memory>
+#include <iostream>
 
 void PipelineRunner:: start(const std::string& image_dir){
-    simulator_ = AcquisitionSimulator(image_dir);
+    // Create simulator with image_dir
+    simulator_ = std::make_unique<AcquisitionSimulator>(image_dir);
+
+    // build preprocessing pipeline
     pipeline_.addstep(std::make_unique<ResizePreprocessor>(640, 640));
     pipeline_.addstep(std::make_unique<NormalizePreprocessor>());
     pipeline_.addstep(std::make_unique<DenoisePreprocessor>());
+    pipeline_.addstep(std::make_unique<EdgePreprocessor>());
 
     running_ = true;
 
     // launch two threads simultaneously
     acquirer_ = std::thread(&PipelineRunner::acquireLoop,this);
     processor_ = std::thread(&PipelineRunner::processLoop, this);
+    
+    std::cout << "[runner] started both threads" << std:: endl;
 }
 
-void PipelineRunner::acquireLoop(){
-    while (running_)
-    {
-        cv::Mat frame = simulator_.nextFrame(); // read from disk
-        frame_queue_.push(frame); // push to queue
+void PipelineRunner::acquireLoop() {
+    while (running_) {
+        if (!simulator_->hasFrames()) break;
+        cv::Mat frame = simulator_->nextFrame();
+        if (!frame.empty()) {
+            frame_queue_.push(frame);
+        }
     }
-    
 }
 
 void PipelineRunner::processLoop(){
@@ -33,8 +41,15 @@ void PipelineRunner::processLoop(){
     
 }
 
-void PipelineRunner::stop(){
+bool PipelineRunner::getResult(cv::Mat& out) {
+    return result_queue_.tryPop(out);
+}
+
+
+void PipelineRunner::stop() {
     running_ = false;
-    acquirer_.join(); // wait for Thread 1 to finish
-    processor_.join(); // wait for Thread 2 to finish
+    frame_queue_.notify();    // wake up processLoop so it can exit
+    if (acquirer_.joinable())  acquirer_.join();
+    if (processor_.joinable()) processor_.join();
+    std::cout << "[runner] stopped both threads" << std::endl;
 }

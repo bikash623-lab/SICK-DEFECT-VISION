@@ -1,6 +1,8 @@
 /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles/sick_core_lib.dir
 /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles/test_acquisition.dir
 /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles/test_preprocessor.dir
+/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles/test_pipeline.dir
+/Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles/test_runner.dir
 /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles/edit_cache.dir
 /Users/bikash_malla/Desktop/SICK-defect-vision/build/CMakeFiles/rebuild_cache.dir
 /Users/bikash_malla/Desktop/SICK-defect-vision/build/practice/CMakeFiles/edit_cache.dir

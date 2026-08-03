@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/acquisition.cpp" "CMakeFiles/sick_core_lib.dir/cpp_core/acquisition.cpp.o" "gcc" "CMakeFiles/sick_core_lib.dir/cpp_core/acquisition.cpp.o.d"
+  "/Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/pipeline.cpp" "CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o" "gcc" "CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o.d"
+  "/Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/pipeline_runner.cpp" "CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o" "gcc" "CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o.d"
   "/Users/bikash_malla/Desktop/SICK-defect-vision/cpp_core/preprocessor.cpp" "CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.o" "gcc" "CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.o.d"
   )
 

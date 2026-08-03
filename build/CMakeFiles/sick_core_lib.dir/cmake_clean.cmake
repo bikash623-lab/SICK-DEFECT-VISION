@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sick_core_lib.dir/cpp_core/acquisition.cpp.o"
   "CMakeFiles/sick_core_lib.dir/cpp_core/acquisition.cpp.o.d"
+  "CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o"
+  "CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o.d"
+  "CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o"
+  "CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o.d"
   "CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.o"
   "CMakeFiles/sick_core_lib.dir/cpp_core/preprocessor.cpp.o.d"
   "libsick_core_lib.a"

@@ -155,6 +155,32 @@ test_preprocessor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_preprocessor.dir/build.make CMakeFiles/test_preprocessor.dir/build
 .PHONY : test_preprocessor/fast
 
+#=============================================================================
+# Target rules for targets named test_pipeline
+
+# Build rule for target.
+test_pipeline: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_pipeline
+.PHONY : test_pipeline
+
+# fast build rule for target.
+test_pipeline/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pipeline.dir/build.make CMakeFiles/test_pipeline.dir/build
+.PHONY : test_pipeline/fast
+
+#=============================================================================
+# Target rules for targets named test_runner
+
+# Build rule for target.
+test_runner: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_runner
+.PHONY : test_runner
+
+# fast build rule for target.
+test_runner/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/build
+.PHONY : test_runner/fast
+
 cpp_core/acquisition.o: cpp_core/acquisition.cpp.o
 .PHONY : cpp_core/acquisition.o
 
@@ -178,6 +204,54 @@ cpp_core/acquisition.s: cpp_core/acquisition.cpp.s
 cpp_core/acquisition.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/acquisition.cpp.s
 .PHONY : cpp_core/acquisition.cpp.s
+
+cpp_core/pipeline.o: cpp_core/pipeline.cpp.o
+.PHONY : cpp_core/pipeline.o
+
+# target to build an object file
+cpp_core/pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.o
+.PHONY : cpp_core/pipeline.cpp.o
+
+cpp_core/pipeline.i: cpp_core/pipeline.cpp.i
+.PHONY : cpp_core/pipeline.i
+
+# target to preprocess a source file
+cpp_core/pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.i
+.PHONY : cpp_core/pipeline.cpp.i
+
+cpp_core/pipeline.s: cpp_core/pipeline.cpp.s
+.PHONY : cpp_core/pipeline.s
+
+# target to generate assembly for a file
+cpp_core/pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/pipeline.cpp.s
+.PHONY : cpp_core/pipeline.cpp.s
+
+cpp_core/pipeline_runner.o: cpp_core/pipeline_runner.cpp.o
+.PHONY : cpp_core/pipeline_runner.o
+
+# target to build an object file
+cpp_core/pipeline_runner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.o
+.PHONY : cpp_core/pipeline_runner.cpp.o
+
+cpp_core/pipeline_runner.i: cpp_core/pipeline_runner.cpp.i
+.PHONY : cpp_core/pipeline_runner.i
+
+# target to preprocess a source file
+cpp_core/pipeline_runner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.i
+.PHONY : cpp_core/pipeline_runner.cpp.i
+
+cpp_core/pipeline_runner.s: cpp_core/pipeline_runner.cpp.s
+.PHONY : cpp_core/pipeline_runner.s
+
+# target to generate assembly for a file
+cpp_core/pipeline_runner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sick_core_lib.dir/build.make CMakeFiles/sick_core_lib.dir/cpp_core/pipeline_runner.cpp.s
+.PHONY : cpp_core/pipeline_runner.cpp.s
 
 cpp_core/preprocessor.o: cpp_core/preprocessor.cpp.o
 .PHONY : cpp_core/preprocessor.o
@@ -227,6 +301,30 @@ cpp_core/test_acq_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_acquisition.dir/build.make CMakeFiles/test_acquisition.dir/cpp_core/test_acq_main.cpp.s
 .PHONY : cpp_core/test_acq_main.cpp.s
 
+cpp_core/test_pipe_main.o: cpp_core/test_pipe_main.cpp.o
+.PHONY : cpp_core/test_pipe_main.o
+
+# target to build an object file
+cpp_core/test_pipe_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pipeline.dir/build.make CMakeFiles/test_pipeline.dir/cpp_core/test_pipe_main.cpp.o
+.PHONY : cpp_core/test_pipe_main.cpp.o
+
+cpp_core/test_pipe_main.i: cpp_core/test_pipe_main.cpp.i
+.PHONY : cpp_core/test_pipe_main.i
+
+# target to preprocess a source file
+cpp_core/test_pipe_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pipeline.dir/build.make CMakeFiles/test_pipeline.dir/cpp_core/test_pipe_main.cpp.i
+.PHONY : cpp_core/test_pipe_main.cpp.i
+
+cpp_core/test_pipe_main.s: cpp_core/test_pipe_main.cpp.s
+.PHONY : cpp_core/test_pipe_main.s
+
+# target to generate assembly for a file
+cpp_core/test_pipe_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pipeline.dir/build.make CMakeFiles/test_pipeline.dir/cpp_core/test_pipe_main.cpp.s
+.PHONY : cpp_core/test_pipe_main.cpp.s
+
 cpp_core/test_prep_main.o: cpp_core/test_prep_main.cpp.o
 .PHONY : cpp_core/test_prep_main.o
 
@@ -251,6 +349,30 @@ cpp_core/test_prep_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_preprocessor.dir/build.make CMakeFiles/test_preprocessor.dir/cpp_core/test_prep_main.cpp.s
 .PHONY : cpp_core/test_prep_main.cpp.s
 
+cpp_core/test_runner_main.o: cpp_core/test_runner_main.cpp.o
+.PHONY : cpp_core/test_runner_main.o
+
+# target to build an object file
+cpp_core/test_runner_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/cpp_core/test_runner_main.cpp.o
+.PHONY : cpp_core/test_runner_main.cpp.o
+
+cpp_core/test_runner_main.i: cpp_core/test_runner_main.cpp.i
+.PHONY : cpp_core/test_runner_main.i
+
+# target to preprocess a source file
+cpp_core/test_runner_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/cpp_core/test_runner_main.cpp.i
+.PHONY : cpp_core/test_runner_main.cpp.i
+
+cpp_core/test_runner_main.s: cpp_core/test_runner_main.cpp.s
+.PHONY : cpp_core/test_runner_main.s
+
+# target to generate assembly for a file
+cpp_core/test_runner_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/cpp_core/test_runner_main.cpp.s
+.PHONY : cpp_core/test_runner_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -261,19 +383,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... sick_core_lib"
 	@echo "... test_acquisition"
+	@echo "... test_pipeline"
 	@echo "... test_preprocessor"
+	@echo "... test_runner"
 	@echo "... cpp_core/acquisition.o"
 	@echo "... cpp_core/acquisition.i"
 	@echo "... cpp_core/acquisition.s"
+	@echo "... cpp_core/pipeline.o"
+	@echo "... cpp_core/pipeline.i"
+	@echo "... cpp_core/pipeline.s"
+	@echo "... cpp_core/pipeline_runner.o"
+	@echo "... cpp_core/pipeline_runner.i"
+	@echo "... cpp_core/pipeline_runner.s"
 	@echo "... cpp_core/preprocessor.o"
 	@echo "... cpp_core/preprocessor.i"
 	@echo "... cpp_core/preprocessor.s"
 	@echo "... cpp_core/test_acq_main.o"
 	@echo "... cpp_core/test_acq_main.i"
 	@echo "... cpp_core/test_acq_main.s"
+	@echo "... cpp_core/test_pipe_main.o"
+	@echo "... cpp_core/test_pipe_main.i"
+	@echo "... cpp_core/test_pipe_main.s"
 	@echo "... cpp_core/test_prep_main.o"
 	@echo "... cpp_core/test_prep_main.i"
 	@echo "... cpp_core/test_prep_main.s"
+	@echo "... cpp_core/test_runner_main.o"
+	@echo "... cpp_core/test_runner_main.i"
+	@echo "... cpp_core/test_runner_main.s"
 .PHONY : help
 
 

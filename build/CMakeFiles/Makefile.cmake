@@ -67,4 +67,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/sick_core_lib.dir/DependInfo.cmake"
   "CMakeFiles/test_acquisition.dir/DependInfo.cmake"
   "CMakeFiles/test_preprocessor.dir/DependInfo.cmake"
+  "CMakeFiles/test_pipeline.dir/DependInfo.cmake"
+  "CMakeFiles/test_runner.dir/DependInfo.cmake"
   )
